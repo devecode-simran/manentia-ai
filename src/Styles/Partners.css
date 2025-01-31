@@ -3,7 +3,7 @@
 .container {
     width: 100%;
     font-family: 'Inter', sans-serif;
-    height: 156px; /* Initial height - will adjust with content */
+    height: 156px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,34 +32,33 @@
 
 .logos-container {
     display: flex;
-    flex-wrap: wrap; /* Allow logos to wrap */
-    justify-content: space-between; /* Distribute space between logos */
+    flex-wrap: wrap; 
+    justify-content: space-between; 
     align-items: center;
-    gap: 20px; /* Space between logos */
-    width: auto; /* Remove fixed width */
+    gap: 20px; 
+    width: auto; 
 }
 
 .logo {
-    width: 200px; /* Initial width */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 200px; /* Prevent logos from becoming too large */
+    width: 200px;
+    height: auto;
+    max-width: 200px; 
     border-radius: 8px;
-    object-fit: contain; /* Use contain to fit logo within bounds */
+    object-fit: contain;
 }
 
-/* Media query for responsiveness */
 @media (max-width: 768px) {
     .container {
-        flex-direction: column; /* Stack text and logos */
-        align-items: flex-start; /* Align items to the left */
-        padding: 40px; /* Adjust padding */
-        height: auto; /* Allow container height to adjust */
+        flex-direction: column; 
+        align-items: flex-start; 
+        padding: 40px;
+        height: auto; 
         gap: 20px;
         align-items: center;
     }
 
     .text-container {
-        margin-bottom: 20px; /* Space between text and logos */
+        margin-bottom: 20px;
         text-align: center;
     }
 
@@ -70,13 +69,13 @@
     }
 
     .logos-container {
-        justify-content: center; /* Center logos */
-        width: 100%; /* Occupy full width */
+        justify-content: center; 
+        width: 100%; 
     }
 
     .logo {
-        width: calc(50% - 20px); /* Two logos per row */
-        max-width: 150px; /* Adjust max-width for smaller screens */
+        width: calc(50% - 20px); 
+        max-width: 150px;
         height: auto;
         margin-bottom: 20px;
     }
@@ -85,11 +84,10 @@
 
 @media (max-width: 500px) {
   .logo {
-      width: 90%; /* Adjust width for very small screens */
-      max-width: 100%; /* Ensure it doesn't exceed container */
+      width: 90%; 
+      max-width: 100%;
       height: auto;
       margin-bottom: 20px;
   }
 }
 
-/* Media query for responsiveness */

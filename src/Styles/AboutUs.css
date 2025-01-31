@@ -1,4 +1,4 @@
-/* About Us Section */
+
 .about-us {
     height: auto;
     padding: 80px;
@@ -6,16 +6,14 @@
     text-align: center;
 }
 
-/* Subheading */
 .subheading-about {
     font-family: 'Inter', sans-serif;
     font-size: 24px;
     font-weight: 400;
     margin-bottom: 8px;
-    color: rgba(0, 8, 22, 0.7); /* #000816 with 70% opacity */
+    color: rgba(0, 8, 22, 0.7); 
 }
 
-/* Heading */
 .heading-about {
     font-family: 'Inter', sans-serif;
     font-size: 36px;
@@ -24,18 +22,16 @@
     color: #000816;
 }
 
-/* About Us Container */
 .about-container {
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start; /* Align items to the top */
+    align-items: flex-start; 
     gap: 40px;
     max-width: 1280px;
     margin: 0 auto;
     text-align: left;
 }
 
-/* Left Side - Images */
 .about-images {
     display: flex;
     flex-direction: row;
@@ -54,26 +50,25 @@
 
 .about-image {
     width: 302px;
-    height: auto; /* Maintain aspect ratio */
+    height: auto;
     object-fit: cover;
     border-radius: 8px;
 }
 
-/* Right Side - Text and Details */
 .about-text {
     display: flex;
     flex-direction: column;
-    height: 100%; /* This is crucial! Matches the height of the images */
+    height: 100%; 
     width: 620px;
 }
 
-.about-text-content { /* Wrapper for right-side content */
+.about-text-content { 
     display: flex;
     flex-direction: column;
-    flex-grow: 1; /* This is also crucial! Allows content to fill the space */
+    flex-grow: 1;
 }
 
-.about-image-right {  /* Style for the image on the right */
+.about-image-right {  
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -96,7 +91,7 @@
     display: flex;
     align-items: center;
     gap: 16px;
-    width: 100%; /* Ensuring full width for text boxes */
+    width: 100%; 
 }
 
 .about-icon {
@@ -117,7 +112,6 @@
     color: #555;
 }
 
-/* Read More Button */
 .read-more-about {
     width: 323px;
     height: 82px;
@@ -136,8 +130,7 @@
     background-color: #0056b3;
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) { /* Tablet view */
+@media (max-width: 1024px) {
     .about-container {
         flex-direction: column;
         align-items: center;
@@ -145,16 +138,16 @@
     }
 
     .about-images {
-        flex-direction: column; /* Stack images vertically */
+        flex-direction: column; 
         align-items: center;
     }
 
     .about-text {
-        width: 90%; /* Or 100% */
-        height: auto; /* Reset height on smaller screens */
+        width: 90%; 
+        height: auto; 
     }
     .about-text-content {
-        flex-grow: 0; /* Prevent content from stretching too much */
+        flex-grow: 0; 
     }
 
     .about-text,
@@ -163,7 +156,7 @@
     }
 }
 
-@media (max-width: 768px) { /* Mobile view */
+@media (max-width: 768px) { 
     .about-us {
         padding: 40px;
     }
@@ -180,23 +173,23 @@
     }
 
     .about-images {
-        flex-direction: row; /* Images side by side on smaller screens */
+        flex-direction: row; 
         width: 100%;
-        justify-content: center; /* Center the images */
+        justify-content: center; 
     }
 
     .about-image {
-        width: 45%; /* Adjust as needed */
+        width: 45%; 
         height: auto;
         margin: 5px;
     }
 
     .about-text {
         width: 100%;
-        height: auto; /* Reset height on smaller screens */
+        height: auto; 
     }
     .about-text-content {
-        flex-grow: 0; /* Prevent content from stretching too much */
+        flex-grow: 0; 
     }
 
     .about-image-right {
@@ -223,7 +216,7 @@
     }
 }
 
-@media (max-width: 480px) { /* Smaller mobile view */
+@media (max-width: 480px) {
     .about-us {
         padding: 20px;
     }
@@ -239,14 +232,14 @@
 
     .about-text {
         width: 100%;
-        height: auto; /* Reset height on smaller screens */
+        height: auto; 
     }
     .about-text-content {
-        flex-grow: 0; /* Prevent content from stretching too much */
+        flex-grow: 0; 
     }
 
     .about-images {
-        flex-direction: column; /* Stack images on very small screens */
+        flex-direction: column; 
     }
 
     .about-image {

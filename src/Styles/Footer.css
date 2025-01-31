@@ -1,31 +1,30 @@
 .footer-container { 
   width:100%;
   display: flex;
-  justify-content: space-between; /* Initial value for larger screens */
-  gap: 40px;
+  justify-content: space-between; 
   padding: 40px 80px;
   background-color: #000816;
   color: #fff;
-  flex-wrap: wrap; /* Allow wrapping */
-  box-sizing: border-box; /* Include padding and border in width */
+  flex-wrap: wrap; 
+  box-sizing: border-box;
 }
 
 .footer-box {
   display: flex;
   flex-direction: column;
-  box-sizing: border-box; /* Include padding and border in width */
+  box-sizing: border-box; 
 }
 
 .footer-contact{
   display: flex;
   flex-direction: column;
   margin-bottom: 40px;
-  width: 100%; /* Make them full width within their container */
-  box-sizing: border-box; /* Include padding and border in width */
+  width: 100%; 
+  box-sizing: border-box; 
 }
 .footer-social-media {
-  width: 100%; /* Make them full width within their container */
-  box-sizing: border-box; /* Include padding and border in width */
+  width: 100%; 
+  box-sizing: border-box; 
 }
 
 .footer-logo {
@@ -43,8 +42,8 @@
   font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 36px;
-  width: 100%; /* Make it full width */
-  box-sizing: border-box; /* Include padding and border in width */
+  width: 100%; 
+  box-sizing: border-box; 
 }
 
 .footer-contact span {
@@ -59,8 +58,8 @@
   display: flex;
   gap: 8px;
   opacity: 0.7;
-  width: 100%; /* Make it full width */
-  box-sizing: border-box; /* Include padding and border in width */
+  width: 100%; 
+  box-sizing: border-box;
 }
 
 .social-icon {
@@ -93,7 +92,6 @@
   text-decoration: underline;
 }
 
-/* Updated CSS for the Subscribe Section */
 .subscribe-form {
   margin-top: 15px;
   display: flex;
@@ -104,7 +102,7 @@
 .input-area {
   display: flex;
   align-items: center;
-  background-color: #182C3F; /* Grey background */
+  background-color: #182C3F; 
   padding: 12px;
   border-radius: 8px;
   width: 100%;
@@ -117,7 +115,7 @@
 }
 
 .email-input {
-  flex: 1; /* Takes up remaining space */
+  flex: 1; 
   border: none;
   background: transparent;
   padding: 10px;
@@ -131,11 +129,11 @@
   color: white;
   border: none;
   cursor: pointer;
-  width: 179px; /* Set width */
-    height: 62px; /* Set height */
-    padding: 16px 64px; /* Set padding */
-    gap: 10px; /* Set gap (not really used here but included as per your specs) */
-    border-radius: 8px; /* Set border radius */
+  width: 179px; 
+    height: 62px;
+    padding: 16px 64px;
+    gap: 10px; 
+    border-radius: 8px;
     box-sizing: border-box;
     font-size: 20px;
     font-weight: 300;
@@ -145,46 +143,44 @@
   background-color: #e07b00;
 }
 
-/* Responsive Styles */
-@media (max-width: 1200px) { /* Adjust breakpoint as needed */
+@media (max-width: 1200px) { 
   .footer-container {
-      justify-content: space-around; /* Distribute space evenly */
+      justify-content: space-around;
   }
 }
 
-@media (max-width: 1024px) { /* Tablet view */
+@media (max-width: 1024px) { 
   .footer-container {
-     /* Stack vertically */
      flex-direction: column;
-      align-items: center; /* Center horizontally */
-      justify-content: center; /* Center vertically */
-      gap: 60px; /* Increased Gap */
+      align-items: center;
+      justify-content: center; 
+      gap: 60px;
   }
 
   .footer-box {
-      width: 90%; /* Make each box take up most of the width */
+      width: 90%; 
       text-align: center;
-      align-items: center; /* Center content within boxes */
-      min-width: auto; /* Remove min-width constraint */
+      align-items: center; 
+      min-width: auto; 
   }
   .footer-social-media {
-      justify-content: center; /* Center social media icons */
+      justify-content: center;
   }
   .subscribe-form {
-      flex-direction: column; /* Stack input and button */
-      align-items: center; /* Center form elements */
-      gap: 20px; /* Increased Gap */
+      flex-direction: column; 
+      align-items: center; 
+      gap: 20px; 
   }
   .subscribe-form input, .subscribe-form button {
-      width: 100%; /* Full width input and button */
-      max-width: 350px; /* Limit max-width */
+      width: 100%; 
+      max-width: 350px; 
   }
 }
 
-@media (max-width: 768px) { /* Mobile view */
+@media (max-width: 768px) { 
   .footer-container {
       padding: 40px;
-      gap: 40px; /* Reset gap for mobile */
+      gap: 40px; 
       align-items: center;
   }
 
@@ -214,14 +210,14 @@
       height: 40px;
   }
   .subscribe-form {
-      gap: 16px; /* Reset gap for mobile */
+      gap: 16px; 
   }
 }
 
-@media (max-width: 480px) { /* Smaller mobile view */
+@media (max-width: 480px) { 
   .footer-container {
       padding: 30px;
-      gap: 30px; /* Reduced gap for smaller screens */
+      gap: 30px; 
   }
   .footer-logo p {
       font-size: 24px;

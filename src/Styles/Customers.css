@@ -1,4 +1,3 @@
-/* styles.css */
 .customer-page-container {
     display: flex;
     height: 100vh;
@@ -7,7 +6,7 @@
 
 .customer-left-bar {
     min-width: 280px;
-    height: 2000px; /* Or min-height: 100vh */
+    height: 2000px; 
     background-color: #1C2536;
     flex: 1;
 }
@@ -80,15 +79,15 @@
     text-decoration-skip-ink: none;
 }
 
-.import-export-container { /* Container for import/export groups */
+.import-export-container { 
     display: flex;
-    gap: 10px; /* Space between import and export */
+    gap: 10px; 
 }
 
 .import-export {
     display: flex;
     align-items: center;
-    gap: 5px; /* Space between icon and text */
+    gap: 5px;
     font-weight: 600;
     width: auto;
     height: auto;
@@ -100,7 +99,7 @@
 
 .header-section-bottom {
     display: flex;
-    justify-content: flex-end; /* Align button to right */
+    justify-content: flex-end; 
     align-items: center;
     width: 100%;
 }

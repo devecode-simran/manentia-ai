@@ -1,10 +1,9 @@
-/* Global Styles */
 body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif; /* Use your preferred font */
-    overflow-x: hidden; /* Prevent horizontal overflow */
+    font-family: 'Inter', sans-serif; 
+    overflow-x: hidden; 
   }
   
   .App {
@@ -13,86 +12,75 @@ body, html {
     align-items: center;
     width: 100%;
     min-height: 100vh;
-    background-color: #ffffff; /* Set a background color */
+    background-color: #ffffff; 
   }
   
-  /* Ensure each component has proper spacing */
   .Navbar, .Hero, .Partners, .OurServices, .Portfolio, .AboutUs, .Testimonial, .Blog, .Footer {
     width: 100%;
-    padding: 40px 0; /* Add vertical padding to each section */
+    padding: 40px 0; 
     box-sizing: border-box;
   }
   
-  /* Navbar Styles */
   .Navbar {
     position: sticky;
     top: 0;
-    z-index: 1000; /* Ensure Navbar stays on top */
-    background-color: #ffffff; /* Adjust as needed */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow for separation */
+    z-index: 1000; 
+    background-color: #ffffff; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
   }
   
-  /* Hero Section */
   .Hero {
-    padding: 80px 0; /* Add more padding for the hero section */
+    padding: 80px 0; 
   }
   
-  /* Partners Section */
   .Partners {
-    background-color: #f9f9f9; /* Add a light background for separation */
+    background-color: #f9f9f9;
   }
   
-  /* Our Services Section */
   .OurServices {
-    background-color: #ffffff; /* Ensure consistent background */
+    background-color: #ffffff; 
   }
   
-  /* Portfolio Section */
   .Portfolio {
-    background-color: #f9f9f9; /* Add a light background for separation */
+    background-color: #f9f9f9; 
   }
   
-  /* About Us Section */
   .AboutUs {
-    background-color: #ffffff; /* Ensure consistent background */
+    background-color: #ffffff;
   }
   
-  /* Testimonial Section */
   .Testimonial {
-    background-color: #f9f9f9; /* Add a light background for separation */
+    background-color: #f9f9f9; 
   }
   
-  /* Blog Section */
   .Blog {
-    background-color: #ffffff; /* Ensure consistent background */
+    background-color: #ffffff; 
   }
   
-  /* Footer Section */
   .Footer {
     background-color: #000816;
     color: #ffffff;
     width: 100%;
     padding: 40px 20px;
-    box-sizing: border-box; /* Ensure padding is included */
+    box-sizing: border-box; 
 }
   
-  /* Responsive Design */
   @media (max-width: 768px) {
     .Navbar, .Hero, .Partners, .OurServices, .Portfolio, .AboutUs, .Testimonial, .Blog, .Footer {
-      padding: 20px 0; /* Reduce padding for smaller screens */
+      padding: 20px 0; 
     }
   
     .Hero {
-      padding: 40px 0; /* Adjust hero padding for mobile */
+      padding: 40px 0; 
     }
   }
   
   @media (max-width: 480px) {
     .Navbar, .Hero, .Partners, .OurServices, .Portfolio, .AboutUs, .Testimonial, .Blog, .Footer {
-      padding: 10px 0; /* Further reduce padding for mobile */
+      padding: 10px 0;
     }
   
     .Hero {
-      padding: 20px 0; /* Adjust hero padding for smaller mobile screens */
+      padding: 20px 0; 
     }
   }
