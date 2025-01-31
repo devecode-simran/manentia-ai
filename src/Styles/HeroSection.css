@@ -1,0 +1,166 @@
+.hero {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px;
+    background-color: #000816;
+    box-sizing: border-box;
+}
+
+.hero-content {
+    
+    max-width: 670px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+.hero-content p {
+    font-family: 'Outfit', sans-serif;
+    font-size: 64px;
+    line-height: 76.8px;
+    color: white;
+    font-weight: 500;
+}
+#hero-para{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: white;
+    margin-bottom: 24px;
+}
+
+.book-a-call {
+    width: 323px;
+    height: 82px;
+    border-radius: 16px;
+    padding: 24px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #003BA4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+    margin-bottom: 24px;
+}
+
+.book-a-call:hover {
+    background-color: #0056b3;
+}
+
+.stats-container {
+    display: flex;
+    gap: 16px;
+    box-sizing: border-box;
+}
+
+.stat-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 212.67px;
+    height: 103px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 16px 39px;
+    gap: 8px;
+    box-sizing: border-box;
+}
+
+.stat-number {
+    font-size: 36px;
+    font-weight: 600;
+    color: white;
+}
+
+.stat-text {
+    font-size: 14px;
+    color: white;
+    opacity: 64%;
+    font-weight: 400;
+    width: fit-content;
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 516px;
+    height: 612px;
+    object-fit: cover;
+    margin-left: 80px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-content {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .hero-content p {
+        font-size: 3rem;
+    }
+
+    .book-a-call {
+        width: 100%;
+        height: auto;
+        padding: 12px 24px;
+    }
+
+    .stats-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .stat-box {
+        width: 100%;
+        height: auto;
+        padding: 12px;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 2rem;
+    }
+
+    .book-a-call {
+        font-size: 1rem;
+    }
+
+    .stat-number {
+        font-size: 28px;
+    }
+
+    .stat-text {
+        font-size: 12px;
+    }
+}

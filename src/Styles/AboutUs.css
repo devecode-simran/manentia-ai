@@ -1,0 +1,274 @@
+/* About Us Section */
+.about-us {
+    height: auto;
+    padding: 80px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Subheading */
+.subheading-about {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    color: rgba(0, 8, 22, 0.7); /* #000816 with 70% opacity */
+}
+
+/* Heading */
+.heading-about {
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 80px;
+    color: #000816;
+}
+
+/* About Us Container */
+.about-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; /* Align items to the top */
+    gap: 40px;
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Left Side - Images */
+.about-images {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+.about-images-left{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.about-images-right{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.about-image {
+    width: 302px;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Right Side - Text and Details */
+.about-text {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* This is crucial! Matches the height of the images */
+    width: 620px;
+}
+
+.about-text-content { /* Wrapper for right-side content */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* This is also crucial! Allows content to fill the space */
+}
+
+.about-image-right {  /* Style for the image on the right */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Our Mission & Vision */
+.about-details {
+    margin-top: 32px;
+}
+
+.detail-box-about {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 100%; /* Ensuring full width for text boxes */
+}
+
+.about-icon {
+    font-size: 32px;
+    color: #003BA4;
+    width: 80px;
+}
+
+.detail-box-about {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 4px;
+}
+
+.detail-box-about p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Read More Button */
+.read-more-about {
+    width: 323px;
+    height: 82px;
+    border-radius: 16px;
+    padding: 24px 48px;
+    background-color: #003BA4;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 24px;
+}
+
+.read-more-about:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) { /* Tablet view */
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .about-images {
+        flex-direction: column; /* Stack images vertically */
+        align-items: center;
+    }
+
+    .about-text {
+        width: 90%; /* Or 100% */
+        height: auto; /* Reset height on smaller screens */
+    }
+    .about-text-content {
+        flex-grow: 0; /* Prevent content from stretching too much */
+    }
+
+    .about-text,
+    .detail-box-about {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) { /* Mobile view */
+    .about-us {
+        padding: 40px;
+    }
+
+    .heading-about {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    .about-container {
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-images {
+        flex-direction: row; /* Images side by side on smaller screens */
+        width: 100%;
+        justify-content: center; /* Center the images */
+    }
+
+    .about-image {
+        width: 45%; /* Adjust as needed */
+        height: auto;
+        margin: 5px;
+    }
+
+    .about-text {
+        width: 100%;
+        height: auto; /* Reset height on smaller screens */
+    }
+    .about-text-content {
+        flex-grow: 0; /* Prevent content from stretching too much */
+    }
+
+    .about-image-right {
+        margin-bottom: 10px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+    }
+
+    .detail-box-about h3 {
+        font-size: 24px;
+    }
+
+    .detail-box-about p {
+        font-size: 14px;
+    }
+
+    .read-more-about {
+        width: 100%;
+        height: auto;
+        padding: 16px 32px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) { /* Smaller mobile view */
+    .about-us {
+        padding: 20px;
+    }
+
+    .heading-about {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .subheading-about {
+        font-size: 16px;
+    }
+
+    .about-text {
+        width: 100%;
+        height: auto; /* Reset height on smaller screens */
+    }
+    .about-text-content {
+        flex-grow: 0; /* Prevent content from stretching too much */
+    }
+
+    .about-images {
+        flex-direction: column; /* Stack images on very small screens */
+    }
+
+    .about-image {
+        width: 100%;
+    }
+
+    .about-text p {
+        font-size: 14px;
+    }
+
+    .detail-box-about h3 {
+        font-size: 20px;
+    }
+
+    .detail-box-about p {
+        font-size: 12px;
+    }
+
+    .read-more-about {
+        width: 100%;
+        height: auto;
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+}

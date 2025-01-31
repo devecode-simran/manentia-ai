@@ -1,0 +1,256 @@
+.footer-container { 
+  width:100%;
+  display: flex;
+  justify-content: space-between; /* Initial value for larger screens */
+  gap: 40px;
+  padding: 40px 80px;
+  background-color: #000816;
+  color: #fff;
+  flex-wrap: wrap; /* Allow wrapping */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+.footer-box {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+.footer-contact{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  width: 100%; /* Make them full width within their container */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+.footer-social-media {
+  width: 100%; /* Make them full width within their container */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-logo img {
+  width: 80px;
+  height: auto;
+}
+
+#company-name {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  width: 100%; /* Make it full width */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+.footer-contact span {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.footer-social-media {
+  display: flex;
+  gap: 8px;
+  opacity: 0.7;
+  width: 100%; /* Make it full width */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+.social-icon {
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+}
+
+.footer-headings {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.footer-box ul {
+  list-style-type: none;
+  padding: 0;
+  gap: 16px;
+}
+
+.footer-box ul li {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  cursor: pointer;
+  line-height: 2;
+}
+
+.footer-box ul li:hover {
+  text-decoration: underline;
+}
+
+/* Updated CSS for the Subscribe Section */
+.subscribe-form {
+  margin-top: 15px;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input-area {
+  display: flex;
+  align-items: center;
+  background-color: #182C3F; /* Grey background */
+  padding: 12px;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.message-icon {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.email-input {
+  flex: 1; /* Takes up remaining space */
+  border: none;
+  background: transparent;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;}
+
+.send-button {
+  background-color: #003BA4;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 179px; /* Set width */
+    height: 62px; /* Set height */
+    padding: 16px 64px; /* Set padding */
+    gap: 10px; /* Set gap (not really used here but included as per your specs) */
+    border-radius: 8px; /* Set border radius */
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.send-button:hover {
+  background-color: #e07b00;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) { /* Adjust breakpoint as needed */
+  .footer-container {
+      justify-content: space-around; /* Distribute space evenly */
+  }
+}
+
+@media (max-width: 1024px) { /* Tablet view */
+  .footer-container {
+     /* Stack vertically */
+     flex-direction: column;
+      align-items: center; /* Center horizontally */
+      justify-content: center; /* Center vertically */
+      gap: 60px; /* Increased Gap */
+  }
+
+  .footer-box {
+      width: 90%; /* Make each box take up most of the width */
+      text-align: center;
+      align-items: center; /* Center content within boxes */
+      min-width: auto; /* Remove min-width constraint */
+  }
+  .footer-social-media {
+      justify-content: center; /* Center social media icons */
+  }
+  .subscribe-form {
+      flex-direction: column; /* Stack input and button */
+      align-items: center; /* Center form elements */
+      gap: 20px; /* Increased Gap */
+  }
+  .subscribe-form input, .subscribe-form button {
+      width: 100%; /* Full width input and button */
+      max-width: 350px; /* Limit max-width */
+  }
+}
+
+@media (max-width: 768px) { /* Mobile view */
+  .footer-container {
+      padding: 40px;
+      gap: 40px; /* Reset gap for mobile */
+      align-items: center;
+  }
+
+  .footer-logo p {
+      font-size: 28px;
+  }
+
+  .footer-logo img {
+      width: 60px;
+  }
+
+  .footer-box span {
+      font-size: 16px;
+  }
+
+  .footer-box ul li {
+      font-size: 12px;
+  }
+
+  .footer-contact span {
+    text-align: center;
+      font-size: 16px;
+  }
+
+  .social-icon {
+      width: 40px;
+      height: 40px;
+  }
+  .subscribe-form {
+      gap: 16px; /* Reset gap for mobile */
+  }
+}
+
+@media (max-width: 480px) { /* Smaller mobile view */
+  .footer-container {
+      padding: 30px;
+      gap: 30px; /* Reduced gap for smaller screens */
+  }
+  .footer-logo p {
+      font-size: 24px;
+  }
+
+  .footer-logo img {
+      width: 50px;
+  }
+  .footer-contact span {
+    text-align: center;
+      font-size: 14px;
+  }
+  .footer-box span {
+      font-size: 14px;
+  }
+
+  .footer-box ul li {
+      font-size: 12px;
+  }
+  .social-icon {
+      width: 36px;
+      height: 36px;
+  }
+  .subscribe-form input {
+      font-size: 12px;
+      padding: 10px;
+  }
+  .subscribe-form button {
+      font-size: 12px;
+      padding: 10px;
+  }
+}

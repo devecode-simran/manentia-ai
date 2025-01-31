@@ -1,0 +1,98 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif; /* Use your preferred font */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+  }
+  
+  .App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ffffff; /* Set a background color */
+  }
+  
+  /* Ensure each component has proper spacing */
+  .Navbar, .Hero, .Partners, .OurServices, .Portfolio, .AboutUs, .Testimonial, .Blog, .Footer {
+    width: 100%;
+    padding: 40px 0; /* Add vertical padding to each section */
+    box-sizing: border-box;
+  }
+  
+  /* Navbar Styles */
+  .Navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure Navbar stays on top */
+    background-color: #ffffff; /* Adjust as needed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow for separation */
+  }
+  
+  /* Hero Section */
+  .Hero {
+    padding: 80px 0; /* Add more padding for the hero section */
+  }
+  
+  /* Partners Section */
+  .Partners {
+    background-color: #f9f9f9; /* Add a light background for separation */
+  }
+  
+  /* Our Services Section */
+  .OurServices {
+    background-color: #ffffff; /* Ensure consistent background */
+  }
+  
+  /* Portfolio Section */
+  .Portfolio {
+    background-color: #f9f9f9; /* Add a light background for separation */
+  }
+  
+  /* About Us Section */
+  .AboutUs {
+    background-color: #ffffff; /* Ensure consistent background */
+  }
+  
+  /* Testimonial Section */
+  .Testimonial {
+    background-color: #f9f9f9; /* Add a light background for separation */
+  }
+  
+  /* Blog Section */
+  .Blog {
+    background-color: #ffffff; /* Ensure consistent background */
+  }
+  
+  /* Footer Section */
+  .Footer {
+    background-color: #000816;
+    color: #ffffff;
+    width: 100%;
+    padding: 40px 20px;
+    box-sizing: border-box; /* Ensure padding is included */
+}
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .Navbar, .Hero, .Partners, .OurServices, .Portfolio, .AboutUs, .Testimonial, .Blog, .Footer {
+      padding: 20px 0; /* Reduce padding for smaller screens */
+    }
+  
+    .Hero {
+      padding: 40px 0; /* Adjust hero padding for mobile */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .Navbar, .Hero, .Partners, .OurServices, .Portfolio, .AboutUs, .Testimonial, .Blog, .Footer {
+      padding: 10px 0; /* Further reduce padding for mobile */
+    }
+  
+    .Hero {
+      padding: 20px 0; /* Adjust hero padding for smaller mobile screens */
+    }
+  }

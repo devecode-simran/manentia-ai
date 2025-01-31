@@ -1,0 +1,267 @@
+/* Main Container */
+.page-container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;  /* Ensures full height */
+    justify-content: center;
+    align-items: flex-start;  /* Align to top instead of center */
+    padding-top: 60px;  /* Adds space above */
+    padding-bottom: 120px;  /* Adds space below */
+    box-sizing: border-box;
+}
+
+/* Left Side - Contact Details */
+.left-content {
+    width: 50%;
+    padding-left: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+/* Specific Typography for 'Join 6,000+ forward-thinking companies' */
+.join-companies {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16.7px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #6366F1;
+  }
+  
+/* Heading for "Talk to Our Account Expert" - Left Side */
+/* Heading for "Talk to Our Account Expert" - Left Side */
+.left-content h2 {
+    font-family: 'Plus Jakarta Sans', sans-serif;  /* Applying the specified font family */
+    font-size: 56.7px;  /* Font size as per your request */
+    font-weight: 700;  /* Font weight as per your request */
+    line-height: 68px;  /* Line height as per your request */
+    text-align: left;  /* Text alignment */
+    text-underline-position: from-font;  /* Text underline position */
+    text-decoration-skip-ink: none;  /* Skip ink decoration */
+    margin: 0;
+    left: 120px;
+    width: 519px;
+    height: 136px;
+  }
+  /* Contact.css */
+
+/* Styling for the Contact container */
+.left-content h3 {
+    width: 463px;
+    height: auto;
+    padding: 0px 0px 0px 0px;
+    gap: 0px;
+    opacity: 1;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 36.7px;
+    font-weight: 700;
+    line-height: 10px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  
+
+/* Back Arrow */
+.back-arrow {
+    cursor: pointer;
+}
+
+/* Navigation Icons */
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.icon {
+    color: #333;
+}
+/* Contact.css */
+
+/* Styling for the mail-icon container */
+.mail-icon {
+    display: flex;
+    align-items: center; /* Vertically align the items */
+    gap: 8px; /* Space between the icon and text */
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  /* Styling for the mail icon image */
+  .mail-icon-img {
+    width: 40px;  /* Ensure the icon size */
+    height: 40px;
+  }
+  
+/* Questions Section */
+/* Have Questions Section - Left Side */
+
+.questions-section {
+    display: flex;
+    align-items: center;  /* Vertically align the icon and text */
+    gap: 8px;  /* Space between the icon and the text */
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  /* Contact.css */
+
+/* Typography for the 'Have questions' text */
+.questions-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  
+  /* Mail Icon */
+  .questions-section .icon {
+    margin-right: 8px;  /* Adjust the space between the icon and the text */
+  }
+  
+/* Logos */
+.logos {
+    display: flex;
+    gap: 32px;
+    margin-top: 16px;
+    padding-right: 23px;
+}
+
+.logos img {
+    
+    height: 18px;
+}
+
+/* Right Side - Form Section */
+.right-form {
+    width: 756px;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: #fff;
+    border-radius: 8px;
+}
+
+/* Form Heading */
+.right-form h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Form Fields */
+.form-row {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+/* Label Styling */
+.form-group label {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Input Fields */
+.form-group input {
+    width: 246px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    background-color: white;
+}
+.form-group select {
+    width: 246px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    background-color: white;
+}
+
+/* Full Width Fields */
+.full-width select {
+    width: 516px;
+}
+.full-width textarea {
+    width: 516px;
+    border-radius: 10px;
+}
+
+.textarea-field {
+    width: 516px;
+    height: 177px;
+    padding: 10px;
+    border-radius: 8px 0px 0px 0px !important;  /* Ensure the border-radius is applied */
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    resize: none;
+    overflow: hidden;  /* Ensures no unwanted scrolling */
+    background-color: white;
+}
+.right-form .textarea-field {
+    border-radius: 8px 0px 0px 0px !important;
+}
+
+
+/* Submit Button */
+.lets-talk-btn {
+    width: 516px;
+    height: 48.25px;
+    background-color: #6366F1;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+.lets-talk-btn:hover {
+    background-color: #6366F1;
+}
+/* Contact.css */
+
+/* Styling for the back-arrow container */
+.back-arrow {
+    display: flex;
+    align-items: center;  /* Vertically align the items */
+    gap: 8px;  /* Space between the arrow and text */
+    font-size: 16px;  /* Adjust as per your design */
+    font-weight: 500;  /* Adjust font weight as needed */
+    color: #333;
+  }
+  
+  /* Optional: Style for the back arrow icon */
+  .back-arrow svg {
+    width: 24px;
+    height: 24px;
+  }

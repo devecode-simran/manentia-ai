@@ -1,0 +1,148 @@
+/* Navbar Base Styles */
+.navbar {
+    background-color: #000816;
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 10;
+    font-size: 20px;
+  }
+  
+  /* Navbar Content */
+  .navbar-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  /* Logo - Always on Left */
+  .logo-nav img {
+    height: 40px;
+  }
+  
+  /* Navigation Items - Centered on Desktop */
+  .nav-items {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .nav-items li {
+    list-style: none;
+  }
+  
+  .nav-items a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Search Icon */
+  .search-icon {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .search-icon img {
+    height: 24px;
+  }
+  
+  /* Talk to Us Button - Always on Right */
+  .talk-to-us {
+    width: 160px;
+    height: 45px;
+    border: 1px solid white;
+    border-radius: 8px;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .talk-to-us:hover {
+    background-color: white;
+    color: #000816;
+  }
+  
+  /* Hide Mobile Menu Toggle on Desktop */
+  .mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    .navbar {
+      padding: 16px 40px;
+    }
+    
+    .talk-to-us {
+      width: 150px;
+      height: 40px;
+      font-size: 16px;
+    }
+  
+    .nav-items {
+      gap: 30px;
+    }
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 12px 20px;
+    }
+  
+    .navbar-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    /* Hide Desktop Nav & Show Mobile Toggle */
+    .nav-items {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #000816;
+      width: 100%;
+      text-align: center;
+      flex-direction: column;
+      padding: 10px 0;
+      z-index: 100;
+    }
+  
+    .nav-items.active {
+      display: flex;
+    }
+  
+    .nav-items li {
+      padding: 15px;
+    }
+  
+    /* Mobile Menu Toggle */
+    .mobile-menu-toggle {
+      display: block;
+    }
+  
+    /* Keep "Talk to Us" & Logo in place */
+    .talk-to-us {
+      width: auto;
+      height: 38px;
+      font-size: 16px;
+    }
+  }
+  

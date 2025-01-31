@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.container {
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    height: 156px; /* Initial height - will adjust with content */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 56px 80px;
+    box-sizing: border-box;
+    background-color: #003BA4;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sub-heading-partners {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.heading-partners {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38.4px;
+    color: #fff;
+}
+
+.logos-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow logos to wrap */
+    justify-content: space-between; /* Distribute space between logos */
+    align-items: center;
+    gap: 20px; /* Space between logos */
+    width: auto; /* Remove fixed width */
+}
+
+.logo {
+    width: 200px; /* Initial width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 200px; /* Prevent logos from becoming too large */
+    border-radius: 8px;
+    object-fit: contain; /* Use contain to fit logo within bounds */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack text and logos */
+        align-items: flex-start; /* Align items to the left */
+        padding: 40px; /* Adjust padding */
+        height: auto; /* Allow container height to adjust */
+        gap: 20px;
+        align-items: center;
+    }
+
+    .text-container {
+        margin-bottom: 20px; /* Space between text and logos */
+        text-align: center;
+    }
+
+    .heading-partners {
+        font-size: 24px;
+        text-align: center;
+       
+    }
+
+    .logos-container {
+        justify-content: center; /* Center logos */
+        width: 100%; /* Occupy full width */
+    }
+
+    .logo {
+        width: calc(50% - 20px); /* Two logos per row */
+        max-width: 150px; /* Adjust max-width for smaller screens */
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 500px) {
+  .logo {
+      width: 90%; /* Adjust width for very small screens */
+      max-width: 100%; /* Ensure it doesn't exceed container */
+      height: auto;
+      margin-bottom: 20px;
+  }
+}
+
+/* Media query for responsiveness */

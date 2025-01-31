@@ -1,0 +1,116 @@
+/* Container styles */
+.our-services-container {
+  width: 100%;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Header styles */
+.our-services-header {
+  text-align: center;
+}
+
+.sub-heading-services {
+  font-size: 24px;
+  color: rgba(0, 8, 22, 0.7); /* #000816 with 70% opacity */
+  font-weight: 400;
+  font-family: 'Inter',sans-serif;
+}
+
+.heading-services {
+  font-size: 36px;
+  font-weight: 600;
+  color: #000816; /* Updated to #000816 */
+}
+
+/* Tiles container styles */
+.tiles-container {
+  display: flex;
+  justify-content: space-between; /* Distribute space between tiles on larger screens */
+  gap: 20px;
+  flex-wrap: wrap; /* Allow wrapping */
+}
+
+/* Service tile styles */
+.service-tile {
+  flex-basis: calc(25% - 20px); /* Use flex-basis for width calculation */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  background-color: #fff;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+.service-tile:hover {
+  background-color: #f0f5ff;
+}
+
+.service-logo {
+  width: 100px;
+  height: 100px;
+}
+
+.service-heading {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000816;
+  text-align: center;
+}
+
+.service-description {
+  font-size: 14px;
+  color: rgba(0, 8, 22, 0.7);
+  text-align: center;
+}
+
+.view-details {
+  font-size: 14px;
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.view-details:hover {
+  color: #0056b3;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .our-services-container {
+      padding: 40px;
+      gap: 40px;
+  }
+
+  .heading-services {
+      font-size: 24px;
+  }
+
+  .service-tile {
+      flex-basis: calc(50% - 20px); /* Two tiles per row */
+      margin-bottom: 20px; /* Add margin between tiles */
+  }
+
+  .tiles-container {
+      justify-content: center; /* Center tiles on smaller screens */
+  }
+
+  .service-logo {
+      width: 80px;
+      height: 80px;
+  }
+}
+
+@media (max-width: 500px) {
+  .service-tile {
+      flex-basis: 100%; /* One tile per row */
+      margin-bottom: 20px;
+  }
+}
