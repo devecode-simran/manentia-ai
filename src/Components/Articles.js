@@ -43,7 +43,7 @@ const Blog = () => {
           <div key={blog.id} className="blog-tile">
             <img
               src={blog.image}
-              alt="Blog Image"
+              alt="Blog"
               className="blog-image"
             />
             <div className="blog-meta">

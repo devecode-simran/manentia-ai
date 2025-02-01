@@ -31,12 +31,6 @@ const testimonials = [
 const Testimonial = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const nextTestimonials = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex + 2 >= testimonials.length ? 0 : prevIndex + 2
-    );
-  };
-
   return (
     <section className="testimonial-section">
       <div className="testimonial-subheading">Testimonial</div>

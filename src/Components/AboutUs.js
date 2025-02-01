@@ -34,7 +34,7 @@ const AboutUs = () => {
 
             <div className="about-details">
               <div className="detail-box-about">
-                <img src={Eye} className="about-icon" />
+                <img src={Eye} className="about-icon" alt="Eye" />
                 <div>
                   <div>Our Vision</div>
                   <p>Lorem ipsum dolor sit amet consectetur. Ut elementum ac eget at. Id et at dui arcu risus.</p>
@@ -42,7 +42,7 @@ const AboutUs = () => {
               </div>
 
               <div className="detail-box-about">
-              <img src={Target} className="about-icon" />
+              <img src={Target} className="about-icon" alt="target"/>
               <div>
                   <div>Our Mission</div>
                   <p>Lorem ipsum dolor sit amet consectetur. Ut elementum ac eget at. Id et at dui arcu risus.</p>

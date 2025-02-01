@@ -1,5 +1,4 @@
 import React from "react";
-import { Box, Typography, Grid } from "@mui/material";
 import PortfolioImage1 from '../Images/Portfolio.png'
 import PortfolioImage2 from '../Images/Portfolio2.png'
 import PortfolioImage3 from '../Images/Portfolio3.png'
