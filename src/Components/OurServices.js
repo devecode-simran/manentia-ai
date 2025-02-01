@@ -5,28 +5,27 @@ import DeviceMobile from '../Images/DeviceMobile.png';
 import Global from '../Images/GlobeHemisphereWest.png';
 import CreditCard from '../Images/CreditCard.png';
 const OurServices = () => {
-  // Data for the tiles
   const services = [
     {
-      logo: PaintBrush, // Replace with actual logo
+      logo: PaintBrush, 
       heading: 'Branding and UI/UX',
       description:
         'Lorem ipsum dolor sit amet consectetur. Quam diam augue lectus vivamus metus',
     },
     {
-      logo: Global, // Replace with actual logo
+      logo: Global, 
       heading: 'Web Development',
       description:
         'Lorem ipsum dolor sit amet consectetur. Quam diam augue lectus vivamus metus',
     },
     {
-      logo: DeviceMobile, // Replace with actual logo
+      logo: DeviceMobile, 
       heading: 'Mobile Development',
       description:
         'Lorem ipsum dolor sit amet consectetur. Quam diam augue lectus vivamus metus',
     },
     {
-      logo: CreditCard, // Replace with actual logo
+      logo: CreditCard, 
       heading: 'Digital Marketing',
       description:
         'Lorem ipsum dolor sit amet consectetur. Quam diam augue lectus vivamus metus',

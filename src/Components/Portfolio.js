@@ -25,7 +25,7 @@ const Portfolio = () => {
             </div>
           ))}
         </div>
-        <div className="view-more-container"> {/* Container for the button */}
+        <div className="view-more-container"> 
           <button className="view-more-button">
             View More
                 <img src={RightArrow} alt="Arrow" className="arrow-icon" />

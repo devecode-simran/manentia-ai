@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../Styles/Testimonial.css"; // Import external CSS
+import "../Styles/Testimonial.css"; 
 import Quotes from '../Images/Quotes.png';
 import Michael from '../Images/Micheal Wong.png'
 import Avril from '../Images/Avril Song.png'
@@ -70,7 +70,6 @@ const Testimonial = () => {
         ))}
       </div>
 
-      {/* Pagination Dots */}
       <div className="testimonial-dots">
         {Array.from({ length: Math.ceil(testimonials.length / 2) }, (_, i) => (
           <span

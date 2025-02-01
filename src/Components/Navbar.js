@@ -15,12 +15,10 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-content">
-        {/* Logo - Always on Left */}
         <div className="logo-nav">
           <img src={Logo} alt="Logo" width="60" height="34.5" />
         </div>
 
-        {/* Desktop Menu */}
         <ul className={`nav-items ${isMobileMenuOpen ? "active" : ""}`}>
           <li className="nav-item">
             <Link to="/services">Services</Link>
@@ -41,12 +39,10 @@ const Navbar = () => {
           </li>
         </ul>
 
-        {/* Talk to Us Button - Always on Right */}
         <button className="talk-to-us" onClick={() => navigate("/contact")}>
           Talk to Us
         </button>
 
-        {/* Mobile Menu Button */}
         <button className="mobile-menu-toggle" onClick={handleMobileMenuToggle}>
           ☰
         </button>
