@@ -176,7 +176,6 @@
       gap: 20px; 
   }
   .subscribe-form input, .subscribe-form button {
-      width: 100%; 
       max-width: 350px; 
   }
   .footer-logo {
@@ -184,6 +183,11 @@
     flex-direction: column;
     align-items: center;
   }
+  .send-button {
+    width: 140px; /* Reduced width */
+    padding: 14px 48px;
+    font-size: 18px;
+}
 }
 
 @media (max-width: 768px) { 
@@ -192,6 +196,11 @@
       gap: 40px; 
       align-items: center;
   }
+  .send-button {
+    width: 120px; /* Further reduced for better spacing */
+    padding: 12px 40px;
+    font-size: 16px;
+}
 
   .footer-logo p {
       font-size: 28px;
@@ -268,4 +277,9 @@
     flex-direction: column;
     align-items: center;
   }
+  .send-button {
+    width: 100px; /* More compact on small screens */
+    padding: 10px 30px;
+    font-size: 14px;
+}
 }
