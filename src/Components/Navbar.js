@@ -3,6 +3,7 @@ import "../Styles/Navbar.css";
 import Logo from "../Images/Logo.png";
 import IconSearch from "../Images/Icon Search.png";
 import { Link, useNavigate } from "react-router-dom";
+import { FaPhoneAlt } from "react-icons/fa"; 
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -40,7 +41,7 @@ const Navbar = () => {
         </ul>
 
         <button className="talk-to-us" onClick={() => navigate("/contact")}>
-          Talk to Us
+        <FaPhoneAlt className="talk-icon" /> Talk to Us
         </button>
 
         <button className="mobile-menu-toggle" onClick={handleMobileMenuToggle}>

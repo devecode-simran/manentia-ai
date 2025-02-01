@@ -32,7 +32,9 @@
   .nav-items li {
     list-style: none;
   }
-  
+.talk-icon {
+  font-size: 15px;
+}
   .nav-items a {
     color: white;
     text-decoration: none;
