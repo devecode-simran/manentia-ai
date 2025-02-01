@@ -236,3 +236,139 @@
     width: 24px;
     height: 24px;
   }
+@media (max-width: 768px) {
+    .page-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px 20px;
+        width: 100%;
+    }
+
+    .left-content {
+        width: 100%;
+        padding-left: 0;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .left-content h2 {
+        font-size: 36px;
+        line-height: 44px;
+        width: 100%;
+    }
+
+    .left-content h3 {
+        font-size: 24px;
+        line-height: 32px;
+        width: 100%;
+    }
+
+    .logos {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .right-form {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+        box-shadow: none;
+        align-items: flex-start; 
+        margin-left: 0; 
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .form-group input,
+    .form-group select,
+    .full-width select,
+    .full-width textarea,
+    .textarea-field,
+    .lets-talk-btn {
+        width: 100%; 
+        max-width: 100%;
+    }
+
+    .textarea-field {
+        height: 150px; 
+    }
+
+    .lets-talk-btn {
+        height: 48px;
+        font-size: 16px;
+        width: 100%; 
+    }
+}
+
+@media (max-width: 1024px) {
+    .page-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 60px 40px;
+        width: 100%;
+    }
+
+    .left-content {
+        width: 100%;
+        padding-left: 0;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .left-content h2 {
+        font-size: 48px;
+        line-height: 56px;
+        width: 100%;
+    }
+
+    .left-content h3 {
+        font-size: 28px;
+        line-height: 36px;
+        width: 100%;
+    }
+
+    .logos {
+        justify-content: flex-start;
+        gap: 24px;
+    }
+
+    .right-form {
+        width: 100%;
+        max-width: 100%;
+        padding: 30px;
+        box-shadow: none;
+        align-items: flex-start; 
+        margin-left: 0; 
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+    }
+
+    .form-group input,
+    .form-group select,
+    .full-width select,
+    .full-width textarea,
+    .textarea-field,
+    .lets-talk-btn {
+        width: 100%; 
+        max-width: 100%;
+    }
+
+    .textarea-field {
+        height: 180px; 
+    }
+
+    .lets-talk-btn {
+        height: 50px;
+        font-size: 18px;
+        width: 100%; 
+    }
+}
