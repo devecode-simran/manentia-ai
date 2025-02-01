@@ -8,6 +8,7 @@ import Bolt from '../Images/Bolt.png';
 import Visma from '../Images/Visma.png';
 import AT from '../Images/AT&T.png';
 import Mail from '../Images/Mail.png'
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -44,7 +45,7 @@ const Contact = () => {
         {/* Back Arrow */}
         <div className="back-arrow">
           <FiArrowLeft size={24} />
-          <p>Home</p>
+          <Link to="/" style={{ textDecoration: "none",color:"black" }}>Home</Link>
         </div>
         <h3>Contact</h3>
         {/* Navigation */}
