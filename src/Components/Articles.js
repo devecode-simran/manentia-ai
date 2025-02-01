@@ -1,12 +1,12 @@
 import React from "react"; 
 import "../Styles/Articles.css";
-import CalendarIcon from "../Images/Calendar.png"; // Adjust image path as necessary
-import Blog1 from "../Images/Blog1.png"; // Adjust image path as necessary
-import Blog2 from "../Images/Blog2.png"; // Adjust image path as necessary
-import Blog3 from "../Images/Blog3.png"; // Adjust image path as necessary
-import ArrowIcon from "../Images/Arrow.png"; // Adjust image path as necessary
-import User from "../Images/User.png"; // Adjust image path as necessary
-import RightArrow from "../Images/ArrowRight.png"; // Adjust image path as necessary
+import CalendarIcon from "../Images/Calendar.png"; 
+import Blog1 from "../Images/Blog1.png"; 
+import Blog2 from "../Images/Blog2.png"; 
+import Blog3 from "../Images/Blog3.png"; 
+import ArrowIcon from "../Images/Arrow.png"; 
+import User from "../Images/User.png"; 
+import RightArrow from "../Images/ArrowRight.png"; 
 
 const blogs = [
   {
@@ -49,7 +49,7 @@ const Blog = () => {
             <div className="blog-meta">
             <div className="blog-name">
                 <img src={User} alt="User Icon" className="user-icon" />
-                <p className="username">{blog.username}</p>  {/* Added username */}
+                <p className="username">{blog.username}</p>  
               </div>
               <div className="blog-date">
                 <img src={CalendarIcon} alt="Calendar Icon" className="calendar-icon" />
@@ -67,7 +67,6 @@ const Blog = () => {
         ))}
       </div>
 
-      {/* Single Read More Button with Arrow Inside it */}
       <div className="read-more-container">
         <button className="read-more-btn">
           Read more

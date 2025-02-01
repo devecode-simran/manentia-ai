@@ -1,7 +1,7 @@
 import React from "react";
 import "../Styles/Footer.css";
-import Logo from "../Images/Logo.png"; // Adjust the logo path
-import Facebook from "../Images/Facebook.png"; // Adjust social media icons
+import Logo from "../Images/Logo.png"; 
+import Facebook from "../Images/Facebook.png"; 
 import Instagram from "../Images/Instagram.png";
 import Twitter from "../Images/Twitter.png";
 import LinkedIn from "../Images/Linkedin.png";

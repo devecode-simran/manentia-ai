@@ -1,7 +1,6 @@
-// Hero.jsx
 import React from 'react';
 import '../Styles/HeroSection.css';
-import { FaPhone } from 'react-icons/fa'; // Or your chosen phone icon
+import { FaPhone } from 'react-icons/fa'; 
 import HeroImage from '../Images/Hero.png';
 
 const Hero = () => {
@@ -34,7 +33,7 @@ const Hero = () => {
         </div>
       </div>
       <img
-        src={HeroImage} // Replace with your image path
+        src={HeroImage} 
         alt="Hero"
         className="hero-image"
       />
